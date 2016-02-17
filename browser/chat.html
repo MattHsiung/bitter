@@ -1,0 +1,26 @@
+bloc-1 -->
+<div class="bloc l-bloc bgc-white" ng-controller="chatCtrl" id="bloc-1">
+	<div id="feed" >
+		<div id="feedBg">
+			<!-- <span class="empty-column"> -->
+				<ul id="messages" class="list-group">
+
+				</ul>
+			<!-- </span> -->
+		</div>
+	</div>
+	<div class="profile sidebar ">
+	<img style="width:100%"src="http://images2.browardpalmbeach.com/imager/silky-johnson-player-hater-of-the-year/u/original/6423004/pimped_out_chappelle1.jpg"/>
+	<h3 ng-model="userName">{{userName}}</h3>
+		<input ng-model="userName" id="username" class="form-control" type="text" placeholder="Enter User Name"></input>
+		<div>
+			<h3>Current Haters</h3>
+			<ul id="userList" class="list-group">
+
+			</ul>
+		</div>
+
+	</div>
+		
+</div>
+<!-- bloc-1 END

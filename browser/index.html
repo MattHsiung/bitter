@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel="stylesheet" id="ppstyle" type="text/css" href="style.css">
+    <link rel='stylesheet' href='/css/animate.css' />
+    <link rel='stylesheet' href='/css/font-awesome.min.css'/>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/emojione/2.1.0/assets/css/emojione.min.css"/>
+    <script src="//cdn.jsdelivr.net/emojione/2.1.0/lib/js/emojione.min.js"></script>
+    <script src="/js/jquery-2.1.0.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/blocs.js"></script>
+    <script src="/js/app.js" defer></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/chat.js" defer></script>
+    
+    <script src="/js/event.js" defer></script>
+ 	<script src="/angular/angular.js" defer></script>
+    <script src="/js/module.js" defer></script>
+    <script src="/js/main.controller.js" defer></script>
+    <script src="/js/chat.controller.js" defer></script>
+    <script src="/js/states.js" defer></script>
+    <script src="/angular-ui-router/release/angular-ui-router.js" defer></script>
+    
+    <title></title>
+</head>
+<body ng-app='app'>
+<!-- Main container -->
+<div class="page-container">
+    
+<!-- Navigation Bloc -->
+<div class="bloc bgc-lincoln-green d-bloc" id="nav-bloc">
+	<div class="container">
+		<nav class="navbar row">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#"><img src="img/bitter.png" alt="logo" width="125" height="50" /></a>
+				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-1">
+				<ul class="site-navigation nav navbar-nav">
+					<li>
+						<a class="animated shake" ui-sref="home">Chat</a>
+					</li>
+					<li>
+						<a class="animated shake" ui-sref="friends">Enemies</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</div>
+<!-- Navigation Bloc END -->
+
+<ui-view></ui-view>
+
+<!-- Footer - chatbox -->
+	<div class="bloc bgc-lincoln-green d-bloc" id="chatbox">
+		<div class="container bloc-sm">
+			<div class="row inputBox">
+					<form class="form-group">
+							<span class="controls">
+								<input id="m"class="form-control" type="text" autocomplete="off"></input>
+							</span>
+							<span class="controls">
+								<input type="submit" class="btn btn-wire btn-lg" value="Submit">
+							</span>
+					</form>
+			</div>
+		</div>
+	</div>
+<!-- Footer - chatbox END -->
+</div>
+<!-- Main container END -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+</body>
+    
+<!-- Google Analytics -->
+
+<!-- Google Analytics END -->
+
+</html>
