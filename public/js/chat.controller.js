@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('chatCtrl', function ($scope, $rootScope) {
-
+// app.controller('chatCtrl', function ($scope, $rootScope) {
+	
  
-});
+// });

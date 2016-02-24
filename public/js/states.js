@@ -6,12 +6,12 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider.state('home', {
         templateUrl: 'chat.html',
         url: '/home',
-        controller:'MainCtrl'
+        controller:'ChatCtrl'
     });
     $stateProvider.state('friends', {
         templateUrl: 'friends.html',
         url: '/haters',
-        controller:'MainCtrl'
+        controller:'AuthCtrl'
     
     });
     

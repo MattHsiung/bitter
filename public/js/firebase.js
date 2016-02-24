@@ -1,0 +1,1 @@
+// myDataRef = new Firebase('https://amber-heat-5894.firebaseio.com/')
